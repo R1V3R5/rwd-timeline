@@ -1,0 +1,62 @@
+html {
+  font-size: 62.5%;
+}
+
+.post {
+  max-width: 325px;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+.postHeader {
+  height: 50px;
+  .postDate {
+    // display: inline-block;
+    font-size: 1.2em;
+    color: lightgrey;
+  }
+  .postTime {
+    display: inline-block;
+    font-size: 1.8em;
+    color:  rgb(104,	190,	240);
+  }
+  .postIcon {
+    float: right;
+  }
+}
+
+.fa {
+  font-size: 2.4em !important;
+}
+
+.postBody {
+  margin: 5px;
+  // background-color: rgb(104,	190,	240);
+  border-radius: 3px;
+  padding: 20px;
+  color: white;
+  .postTitle {
+    font-size: 1.6em;
+    text-align: center;
+    border-bottom: 2px grey solid;
+  }
+}
+
+.post:nth-child(odd) {
+  .postBody {
+    background-color: rgb(104,	190,	240);
+  }
+}
+
+.post:nth-child(even) {
+  .postBody {
+    background-color: rgb(46, 147, 205);
+  }
+}
+
+
+@media screen and (min-width:425px) {
+  body {
+    display: none;
+  }
+}
